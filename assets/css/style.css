@@ -1,0 +1,367 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+header,
+section {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --Gray-600: hsl(207, 13%, 34%);
+  --Gray-900: hsl(240, 10%, 16%);
+  --Red-500: hsl(356, 100%, 66%);
+  --Red-400: hsl(355, 100%, 74%);
+  --Blue-900: hsl(208, 49%, 24%);
+  --Orange-300: hsl(13, 100%, 72%);
+  --Red-550: hsl(353, 100%, 62%);
+  --Purple-950: hsl(237, 17%, 21%);
+  --Purple-900: hsl(237, 23%, 31%);
+}
+
+/* Style */
+body {
+  background-color: var(--white);
+  padding: 0;
+  text-align: center;
+}
+/* header */
+header {
+  position: relative; /* IMPORTANT pour le positionnement absolu du menu */
+  background:
+    linear-gradient(var(--Orange-300), var(--Red-500)),
+    url("../images/bg-pattern-intro-mobile.svg") center/cover no-repeat;
+  padding: 2rem;
+  border-bottom-left-radius: 100px;
+  color: var(--white);
+}
+
+header .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.burger-icon {
+  cursor: pointer;
+  z-index: 110;
+}
+
+header hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 1.5rem 0;
+}
+
+/* Boutons généraux */
+button {
+  border-radius: 50px;
+  background-color: transparent;
+  border: transparent;
+  padding: 0.7rem 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Menu mobile */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  width: 90%;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  flex-direction: column;
+  gap: 1rem;
+}
+body.menu-open .mobile-nav {
+  display: flex;
+}
+.menu-section {
+  text-align: center;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  color: var(--Gray-900);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.menu-title img {
+  transition: transform 0.3s ease;
+}
+.menu-section.active .menu-title img {
+  transform: rotate(180deg);
+}
+
+/* sous menus */
+.submenu {
+  list-style: none;
+  display: none;
+  background-color: hsl(240, 2%, 92%);
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.menu-section.active .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 0.5rem 0;
+}
+
+.submenu a {
+  color: var(--Gray-600);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.submenu a:hover {
+  color: var(--Gray-900);
+  font-weight: 700;
+}
+.menu-divider {
+  border: none;
+  border-top: 1px solid hsl(240, 2%, 85%);
+  margin: 1rem 0;
+}
+.menu-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.btn-login-nav {
+  color: var(--Gray-900);
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.btn-signup-nav {
+  background: linear-gradient(to right, var(--Orange-300), var(--Red-550));
+  color: var(--white);
+  font-weight: 700;
+  padding: 0.9rem 2.5rem;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+.hero-text h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: var(--white);
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--Red-550);
+  font-weight: 700;
+}
+
+.btn-white:hover {
+  background-color: var(--Red-400);
+  color: var(--white);
+}
+
+.btn-outline {
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.btn-outline:hover {
+  background-color: var(--white);
+  color: var(--Red-550);
+}
+/* main */
+section h2 {
+  color: var(--Blue-900);
+  padding-bottom: 2rem;
+}
+section article p,
+section article h3 {
+  color: var(--Blue-900);
+  padding-bottom: 1rem;
+}
+h1,
+h2,
+h3 {
+  font-size: 1.7rem;
+  font-family: "Overpass", sans-serif;
+}
+h1,
+h2 {
+  font-weight: 900;
+}
+section img:first-of-type {
+  width: 100%;
+  height: auto;
+}
+.StateAI h2,
+.StateAI p {
+  color: var(--white);
+}
+.StateAI {
+  background-color: var(--Purple-950);
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-size: cover;
+  background-position: center -13rem;
+  background-repeat: no-repeat;
+  overflow: visible;
+  padding: 2rem;
+  margin-top: 9.3rem;
+}
+section:nth-of-type(2) article img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
+  margin-top: -180px;
+  position: relative;
+  z-index: 10;
+}
+article {
+  padding: 2rem;
+}
+article img {
+  width: 100%;
+  height: auto;
+}
+.row-content {
+  margin-top: 13rem;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  color: var(--white);
+  background-color: var(--Gray-900);
+  border-top-right-radius: 100px;
+}
+footer ul li {
+  list-style: none;
+  padding-bottom: 0.4rem;
+  color: rgb(202, 202, 202);
+}
+
+footer div h4 {
+  padding-bottom: 1rem;
+  font-size: larger;
+}
+
+footer a:hover {
+  color: var(--white);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  /* header */
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* main */
+  section:nth-of-type(2) article {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  section:nth-of-type(2) article h2 {
+    padding-bottom: 0.3rem;
+  }
+  section:nth-of-type(2) article:first-of-type {
+    flex-direction: row;
+    text-align: left;
+    background-position: -200px -35rem;
+    background-size: 80%;
+    height: 225px;
+    padding: 0 10%;
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .content-text {
+    flex: 1;
+    padding-left: 50px;
+  }
+.row-content{
+  display: flex;
+  justify-content: space-between;
+}
+  .image-container img {
+    max-width: 550px;
+    margin-top: 0;
+    position: relative;
+    top: 70px;
+  }
+  /* footer */
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem 13rem;
+  }
+}
