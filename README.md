@@ -21,7 +21,7 @@ Ce projet est une reproduction d'une landing page complexe réalisée dans le ca
 2. **Assets graphiques** : L'intégration des motifs de fond (cercles) a demandé l'utilisation de `background-position` avec des coordonnées spécifiques pour respecter la maquette sans créer de barres de défilement horizontales.
 
 ### Ce que j'ai appris
-Ce projet m'a permis de solidifier ma compréhension des flux CSS. J'ai notamment appris à mieux structurer mes classes pour rendre le code plus lisible et à utiliser le JavaScript pur (Vanilla) pour des composants d'interface sans dépendre de frameworks.
+Ce projet m'a permis de solidifier ma compréhension des flux CSS. J'ai notamment appris à mieux structurer mes classes pour rendre le code plus lisible et à utiliser le JavaScript pour des composants d'interface sans dépendre de frameworks.
 
 ## Sources
 * Design & Assets : [Frontend Mentor](https://www.frontendmentor.io)
