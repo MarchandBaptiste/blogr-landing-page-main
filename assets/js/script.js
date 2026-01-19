@@ -5,9 +5,9 @@ const body = document.body;
 btnMenu.addEventListener("click", () => {
   body.classList.toggle("menu-open");
   if (body.classList.contains("menu-open")) {
-    btnMenu.src = "../assets/images/icon-close.svg";
+    btnMenu.src = "./assets/images/icon-close.svg";
   } else {
-    btnMenu.src = "../assets/images/icon-hamburger.svg";
+    btnMenu.src = "./assets/images/icon-hamburger.svg";
   }
 });
 
