@@ -3,7 +3,7 @@
 ## Présentation
 Ce projet est une reproduction d'une landing page complexe réalisée dans le cadre de mes études, sur mon temps libre. L'objectif était de valider mes compétences en intégration responsive et en manipulation du DOM.
 
-**Démo en ligne :** [https://marchandbaptiste.github.io/blogr-landing-page-main/](https://marchandbaptiste.github.io/blogr-landing-page-main/)
+**Démo en ligne :** [Blogr](https://marchandbaptiste.github.io/blogr-landing-page-main/)
 
 ## Objectifs du projet
 * Mise en œuvre d'un design responsive (Mobile First).
