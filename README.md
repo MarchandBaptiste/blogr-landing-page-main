@@ -28,5 +28,3 @@ Ce projet m'a permis de solidifier ma compréhension des flux CSS. J'ai notammen
 * Documentation Flexbox : [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * Standard Accessibilité : [MDN Web Docs](https://developer.mozilla.org/)
 
----
-**Note d'étudiant :** Ce challenge est un excellent exercice pour s'exercer aux mises en page modernes. Le code est optimisé pour être léger et performant.
